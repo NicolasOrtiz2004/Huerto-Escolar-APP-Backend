@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <!-- Configuración de ejecución de IntelliJ para ms-sensores: ejecuta su clase main (MAIN_CLASS_NAME)
+       del módulo Maven indicado. "Make" = compila antes de ejecutar. -->
+  <configuration default="false" name="ms-sensores" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="cl.duoc.mssensores.MsSensoresApplication" />
+    <module name="ms-sensores" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

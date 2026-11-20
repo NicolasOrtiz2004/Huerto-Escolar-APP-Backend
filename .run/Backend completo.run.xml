@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <!-- Configuración COMPUESTA: arranca los 3 microservicios con un solo ▶ -->
+  <configuration default="false" name="Backend completo" type="CompoundRunConfigurationType">
+    <toRun name="ms-usuarios" type="Application" />
+    <toRun name="ms-huerto" type="Application" />
+    <toRun name="ms-sensores" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    POM "AGREGADOR" DEL BACKEND
+    ===========================
+    No es un microservicio: solo junta los 3 proyectos para que IntelliJ los
+    importe de una vez y para poder ejecutar "mvn test" sobre todos.
+    Cada microservicio sigue siendo INDEPENDIENTE (su propio pom, su propio
+    puerto y su propia base de datos).
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cl.duoc</groupId>
+    <artifactId>huerto-escolar-backend</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+    <name>Huerto Escolar - Backend (microservicios)</name>
+
+    <modules>
+        <module>ms-usuarios</module>  <!-- puerto 8081: cuentas e inicio de sesión -->
+        <module>ms-huerto</module>    <!-- puerto 8082: sectores y cultivos -->
+        <module>ms-sensores</module>  <!-- puerto 8083: lecturas simuladas -->
+    </modules>
+</project>
